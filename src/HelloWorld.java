@@ -30,8 +30,11 @@ public class HelloWorld {
 
 //                Change your code to declare myNumber as a float. Assign the value 3.14 to it. What happens? What are two ways we could fix this?
 
+//        float myNumber1 = 3.14F;
         float myNumber1 = (float) 3.14;
         System.out.println(myNumber1);
+
+
 
 //                Copy and paste the following code blocks one at a time and execute them
 //
@@ -65,8 +68,9 @@ public class HelloWorld {
 //        int three = (int) "three";
 //        What are the two different types of errors we are observing?
 //
-//                /* int three = (int) o; expects a ClassCastExpectation
+//                /** int three = (int) o; expects a ClassCastExpectation
 //                *  int three = (int) "three"; String cannot be converted to int
+//                * a string cannot cast into an integer
 //                */
 
 //                Rewrite the following expressions using the relevant shorthand assignment operators:
@@ -102,5 +106,19 @@ public class HelloWorld {
         tooClose +=100;
         System.out.println(tooClose);
         /* value will only increment one value past its variable type limit and WILL NOT SHOW AN ERROR */
+
+        final int SIDE_OF_DICE = 6;
+        System.out.println(SIDE_OF_DICE);
+
+        double pi = 3.14159;
+        int almostPi = (int) pi;
+        System.out.println(pi);
+        System.out.println(almostPi);
+
+
+
+        int aNumber = Integer.MAX_VALUE;
+//        int aNumber = Integer.MAX_VALUE + 1;
+        System.out.println(aNumber);
     }
 }
