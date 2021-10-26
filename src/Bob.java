@@ -26,7 +26,7 @@ public class Bob {
             System.out.println("Whatever.");
         }
             //        Write the Java code necessary so that a user of your command line application can have a conversation with Bob.
-        System.out.println("Do you want to continue? (Y/N) ");
+        System.out.println("Do you want to keep talking to Bob? (Y/N) ");
         confirm = bobsScanner.nextLine().equalsIgnoreCase("y");
     } while (confirm);
         System.out.println();
