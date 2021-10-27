@@ -104,7 +104,6 @@ public class ControlFlowExercises {
 
 
 
-
         do {
             System.out.println("Enter a numerical grade from 0 to 100: ");
             int userNumber = controlScanner.nextInt();
