@@ -12,7 +12,7 @@ public class HelloWorld {
 
 //        Create a String variable named myString and assign a string value to it, then print the variable out to the console.
 
-        String myString = "This isn't so bad.";
+        String myString = "This isn't so bad. "+" 1";
         System.out.println(myString);
 
 //                Change your code to assign a character value to myString. What do you notice?
@@ -120,5 +120,11 @@ public class HelloWorld {
         int aNumber = Integer.MAX_VALUE;
 //        int aNumber = Integer.MAX_VALUE + 1;
         System.out.println(aNumber);
+
+        int ohh = 5;
+        System.out.println(ohh > 2 ? ohh < 4 ? 10 : 8 : 7);
+
+        int yesir = 5 * 4 % 3;
+        System.out.println(yesir);
     }
 }
