@@ -1,7 +1,28 @@
+import java.util.Scanner;
+
 public class HIghLow {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("You're about to play a guessing game!");
+        int luckyNumber = (int)Math.floor(Math.random() * 100);
+        int playerGuess;
 
+        System.out.println("Go ahead! Take a guess!");
+
+        do {
+
+            System.out.println("Choose a number between 1 and 100. ");
+            playerGuess = scanner.nextInt();
+
+            if (playerGuess > luckyNumber) {
+                System.out.println("OOOOOH A little LOWER!");
+            } else if (playerGuess < luckyNumber) {
+                System.out.println("OOOOOH A little HIGHER!");
+            } else {
+                System.out.println("VERR NICE! GUDE YOB!! aka GOOD GUESS!");
+            }
+        }while(playerGuess != luckyNumber);
     }
 //Game Development 101
 //Welcome to the world of game development!
