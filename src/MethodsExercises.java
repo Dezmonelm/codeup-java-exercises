@@ -13,7 +13,7 @@ public class MethodsExercises {
         System.out.println(userInteger(5, 12));
         printFactorial();
         dicePair();
-//        rollDice();
+
     }
         //Each function needs to take two parameters/arguments so that the operation can be performed.
         //Create four separate methods. Each will perform an arithmetic operation:
@@ -103,27 +103,29 @@ public class MethodsExercises {
     }
 
     //Create an application that simulates dice rolling.
-    public static int dicePair(){
+    public static void dicePair(){
         Scanner diceScanner = new Scanner(System.in);
         //Ask the user to enter the number of sides for a pair of dice.
         System.out.println("What number of sides would you like on a pair of dice?");
         int diceSides = diceScanner.nextInt();
-        return diceSides;
-    }
-
     //Prompt the user to roll the dice.
-//    public static int rollDice(){
-//        Scanner rollScanner = new Scanner(System.in);
-//        System.out.println("Roll the dice");
-        //"Roll" two n-sided dice, display the results of each, and then ask the user if he/she wants to roll the dice again.
-//        Scanner diceRolled = new Scanner(System.in);
+        Scanner rollScanner = new Scanner(System.in);
+        System.out.println("Roll the dice");
+//        "Roll" two n-sided dice, display the results of each, and then ask the user if he/she wants to roll the dice again.
         //Use static methods to implement the method(s) that generate the random numbers.
-//        Random randomNum = new Random();
-//        int randomDieNum = randomNum.nextInt((Math.random() * 7));
 
-//        return randomDieNum;
-//        return rollDice(min, max);
-//    }
+            boolean confirm;
+            do {
+                int die1 = (int) Math.floor(Math.random() * diceSides);
+                int die2 = (int) Math.floor(Math.random() * diceSides);
+                System.out.println(die1);
+                System.out.println(die2);
+
+                System.out.println("Would you like to play again? (y/n)");
+                confirm = diceScanner.next().equalsIgnoreCase("y");
+            } while (confirm);
+
+    }
 
 
 

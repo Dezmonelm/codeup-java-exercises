@@ -1,48 +1,49 @@
 public class Person {
-    //A class: this is a template or blueprint for a 'person'
 
-    //instance variables
-    public String firstName;
-    public String lastName;
-    public int age;
+    private String name;
 
-    //instance method
-    public String joinChat() {
-        return lastName + " , " + firstName + " has joined the chat!";
-    };
 
-    //Make a static property - representing the world population
-    public static long worldPop = 7_753_000_000L;
+public Person(String name) {
+    this.name = name;
+}
+    public String getName(){
+//TODO: return the person's name
+        return name;
+    }
+
+    public void setName(String name){
+//TODO: change the name property to the passed value
+        this.name = name;
+
+
+    }
+    public void sayHello(){
+//TODO: print a message to the console using the person's name
+        System.out.printf("hello %s !", this.name);
+    }
 
     public static void main(String[] args) {
-        Person dez = new Person();
+        Person dez = new Person("Dezmone M.");
+        dez.name = "Dezmone M.";
+        System.out.printf("hello %s !", dez.name);
 
-        dez.firstName = "Dez";
-        dez.lastName = "Musgrove";
+//        Person person1 = new Person("John");
+//        Person person2 = new Person("John");
+//        System.out.println(person1.getName().equals(person2.getName()));
+//        System.out.println(person1 == person2);
 
-        System.out.println("dez = " + dez);
-        System.out.println(dez.firstName + " " + dez.lastName + " is my name!");
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1 == person2);
 
-        System.out.printf("%s %s is my name !%n", dez.firstName, dez.lastName);
+        Person person1 = new Person("John");
+        Person person2 = person1;
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
+        person2.setName("Jane");
+        System.out.println(person1.getName());
+        System.out.println(person2.getName());
 
-        System.out.println(dez.joinChat());
-
-        System.out.println("worldPop = " + worldPop);
-
-        Person douglas = new Person();
-        douglas.firstName = "Douglas";
-        douglas.lastName = "Hirsh";
-
-        //Douglas didn't get counted
-
-
-        //do this instead
-        Person.worldPop += 1;
-
-        System.out.println("worldPop with Douglas :D = " + worldPop);
-//        System.out.println(douglas.worldPop); // works but not proper
-
-        //Can not do
-//        System.out.println(Person.firstName);
     }
+
 }
