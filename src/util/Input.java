@@ -47,7 +47,7 @@ public class Input {
         return userDouble;
     }
 
-    double getDouble() {
+    public double getDouble() {
         return this.scanner.nextDouble();
     }
 
