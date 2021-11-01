@@ -15,5 +15,7 @@ public class CircleApp {
         double area = circle.getArea();
         System.out.printf("The radius is %f", radius);
         System.out.printf("The circle's circumference is %f and the area is %f.%n", circumference, area);
+
+        System.out.println();
     }
 }
