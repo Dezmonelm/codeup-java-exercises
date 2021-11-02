@@ -23,8 +23,15 @@ public class MoviesApplication {
         int userChoice = input.getInt();
         System.out.println(userChoice);
         if (userChoice == 1) {
-            System.out.println(Arrays.toString(MoviesArray.findAll()));
+
         }
+//            Movie[] movies = new Movie[0];
+//            for(Movie movie:list){
+//                if(movie.getMovieCategory().EqualsIgnoreCase("drama")){
+//                    searchResult = Arrays.copyOf(searchResult,searchResult.length+1);
+//                    searchResult[searchResult.length-1] = movie;
+//                }
+//            }
 
 //        } while ()
 

@@ -25,7 +25,7 @@ public class Movie {
 
 
 // get back a category
-//Movie[] searchResult new Movie[0];
+////Movie[] searchResult new Movie[0];
 //for(Movie movie:library){
 //        if(movie.getMovieCategory().EqualsIgnoreCase("drama")){
 //        searchResult = Arrays.copyOf(searchResult,searchResult.length+1);
