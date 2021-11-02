@@ -59,7 +59,18 @@ public class Candy {
         Candy mAndMs = new Candy("M & M's", "Share Size", new String[] {"milky", "chocolatey", "goodness", "scrumptious\n"});
         System.out.println(mAndMs.moCandyMethod());
 
-
+//        Candy[] myBag = {funsizeSnickers, fullsizeKitKat};
+//
+//        for(Candy singleCandy : myBag){
+////                String descriptors = Arrays.toString(singleCandy.descriptors);
+////                descriptors = descriptors.substring(1, descriptors.length() - 1);
+//            System.out.printf("Here's a %s that is %s - it's described as having the following traits: %s%n", singleCandy.name, singleCandy.size, Arrays.toString(singleCandy.descriptors));
+//
+//            Candy[] newBag = Candy.addCandy(myBag, newCandy);
+//
+//            for(Candy singleCandy : newBag){//Ah! Now let's see if our new candy is in this array
+//                System.out.println(singleCandy.name);
+//            }
     }
 
 

@@ -1,11 +1,19 @@
 public class Person {
 
     private String name;
+    protected int age;
 
+    // public string name for inheritance and polymorphism lecture
+//    public String name;
+
+    //constructor - for extends - needs to be blank
+    public Person () {};
 
 public Person(String name) {
     this.name = name;
 }
+
+public Person(String name, int age) {}
     public String getName(){
 //TODO: return the person's name
         return name;
