@@ -6,7 +6,8 @@ public class Rectangle {
     protected int length;
     protected int width;
 
-//    public Rectangle () {};
+    public Rectangle () {};
+    public Rectangle (int side) {};
 
 //    Rectangle should define a constructor that accepts two numbers for length and width, and sets those properties.
     public Rectangle (int length, int width) {
