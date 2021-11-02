@@ -34,7 +34,7 @@ public class Input {
         return userNum;
     };
 
-    int getInt() {
+    public int getInt() {
         return this.scanner.nextInt();
     }
 
