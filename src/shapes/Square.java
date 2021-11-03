@@ -17,10 +17,13 @@ public PrintStream getArea () {
     return System.out.format(String.valueOf(4 * this.side));
 }
 
-public PrintStream getPerimeter() {
-    System.out.println("Square perimeter: ");
+//public double getPerimeter() {
+//
+//    return this.side * this.side;
+//}
+
+public PrintStream printStreamPrintInfo() {
     return System.out.format(String.valueOf(this.side * this.side));
 }
-
 }
 

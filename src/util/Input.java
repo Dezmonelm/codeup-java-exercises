@@ -7,7 +7,7 @@ public class Input {
 
 
     public Input() {
-        scanner = new Scanner(System.in);
+        this.scanner = new Scanner(System.in);
     }
 
 
@@ -35,7 +35,7 @@ public class Input {
     };
 
     public int getInt() {
-        return this.scanner.nextInt();
+        return Integer.parseInt(this.scanner.nextLine());
     }
 
     double getDouble(double min, double max) {

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HIghLow {
+public class HighLow {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
