@@ -1,5 +1,7 @@
 package shapes;
 
+import java.io.PrintStream;
+
 public class Rectangle {
 
 //    t should have protected properties for both length and width.
@@ -7,7 +9,7 @@ public class Rectangle {
     protected int width;
 
     public Rectangle () {};
-    public Rectangle (int side) {};
+//    public Rectangle (int side) {};
 
 //    Rectangle should define a constructor that accepts two numbers for length and width, and sets those properties.
     public Rectangle (int length, int width) {
@@ -17,11 +19,11 @@ public class Rectangle {
 
 //    Create two methods on the Rectangle class, getArea and getPerimeter that return the respective values.
 
-    public int getArea() {
-        return length * width;
+    public PrintStream getArea() {
+        return System.out.format(String.valueOf(length * width));
     }
 
-    public int getPerimeter() {
-        return 2 * length + 2 * width;
+    public PrintStream getPerimeter() {
+        return System.out.format(String.valueOf(2 * length + 2 * width));
     }
 }
