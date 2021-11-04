@@ -14,12 +14,16 @@ public class War {
 
 
     }
-    public static Card dealCards () {
+//    public static Card dealCards () {
+
+// random card method
+//        public static int drawCard(){
+//            int randomCard = (int) Math.floor(Math.random() * CardsArray.getAllCards().length+1);
+//            return randomCard;
+//        }
 
 
-
-
-    }
+//    }
 }
 
 // random number
