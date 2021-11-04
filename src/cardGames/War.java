@@ -1,8 +1,17 @@
 package cardGames;
 
+import util.Input;
+
+import java.util.Arrays;
+
 public class War {
 
+//    public static void shuffleDeck(){
+//        for (Card card : CardsArray.shuffle()){
+//            System.out.printf("%d of %s%n", card.value, card.suit);
+//        }
     public static void main(String[] args) {
+
 
         Card[] deck = CardsArray.getAllCards();
         for (Card card : deck) {
@@ -11,6 +20,8 @@ public class War {
 
         Player dez = new Player("Dezmone", 0);
         Player shan = new Player("Shanshan", 0);
+
+        System.out.println(Arrays.toString(deck));
 
 
     }
