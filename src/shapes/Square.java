@@ -10,7 +10,7 @@ public class Square extends Quadralateral {
 
     @Override
     public double getPerimeter() {
-        return 2 * (this.length + this.width);
+        return 4 * this.length;
     }
 
     @Override
