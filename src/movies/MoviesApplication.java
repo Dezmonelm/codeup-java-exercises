@@ -1,3 +1,5 @@
+package movies;
+
 import movies.Movie;
 import movies.MoviesArray;
 import util.Input;
