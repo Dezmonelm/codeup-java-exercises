@@ -17,6 +17,7 @@ public class GroceryListApp {
 
             if (userInput.equalsIgnoreCase("y")) {
                 System.out.println("What list do you want to make today?\n");
+                //make some comments so you doon't get lost from now on...ya know since you think you're a web developer and all now.....oh full stack at that ¯\_(ツ)_/¯
                 System.out.println("0 - exit list\n1 - Baby List\n2 - Libations\n3 - Other Drinks\n4 - Bread & Bakery\n5 - Proteins\n6 - Produce\n7 - Canned Goods\n8 - Sweeties Indeedies\n");
                 System.out.println();
                 System.out.println("Enter a choice: ");
