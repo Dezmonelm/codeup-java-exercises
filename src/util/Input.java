@@ -19,6 +19,16 @@ public class Input {
         return this.scanner.nextLine();
     };
 
+//    public getInt(String prompt) {
+//        int number;
+//        try {
+//            number = Integer.valueOf(getString(prompt));
+//            return number;
+//        } catch (NumberFormatException nfe) {
+//            System.out.println("Wrong input");
+//        }
+//    }
+
     boolean yesNo() {
         String answer = scanner.nextLine();
         System.out.println("Enter 'y' if true or 'n' if false");
@@ -40,7 +50,7 @@ public class Input {
     public int getInt() {
         try {
             return Integer.parseInt(this.scanner.nextLine());
-        } catch (Exception e){
+        } catch (NumberFormatException nfe){
             System.out.println("Please enter a number, not a word.");
             return getInt();
         }
@@ -60,7 +70,7 @@ public class Input {
     public double getDouble() {
         try {
             return Double.parseDouble(this.scanner.nextLine());
-        } catch (Exception e) {
+        } catch (NumberFormatException nfe) {
             System.out.println("Please enter a number, not a word.");
             return getDouble();
         }
