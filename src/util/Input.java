@@ -35,7 +35,14 @@ public class Input {
     };
 
     public int getInt() {
-        return Integer.parseInt(this.scanner.nextLine());
+        try {
+            return Integer.parseInt(this.scanner.nextLine());
+        } catch (Exception e){
+            System.out.println("Please enter a number, not a word.");
+            return getInt();
+        }
+
+
     }
 
     double getDouble(double min, double max) {
@@ -48,7 +55,14 @@ public class Input {
     }
 
     public double getDouble() {
-        return this.scanner.nextDouble();
+        try {
+            return Double.parseDouble(this.scanner.nextLine());
+        } catch (Exception e) {
+            System.out.println("Please enter a number, not a word.");
+            return getDouble();
+        }
+
+
     }
 
 }

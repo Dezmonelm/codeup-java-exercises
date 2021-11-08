@@ -15,12 +15,14 @@ public class InputTest {
 //        int userNum = input.getInt();
 //        System.out.println(userNum);
 //
-//        System.out.println("Give a decimal number: ");
-//        double myDouble = input.getDouble();
-//        System.out.println(myDouble);
+        System.out.println("Give a decimal number: ");
+        double myDouble = input.getDouble();
+        System.out.println(myDouble);
 
-        double anotherDouble = input.getDouble(1, 100);
-        System.out.println(anotherDouble);
+//        double anotherDouble = input.getDouble(1, 100);
+//        System.out.println(anotherDouble);
+
+
     }
 //
 //    }
