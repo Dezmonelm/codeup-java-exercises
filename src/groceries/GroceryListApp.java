@@ -28,12 +28,17 @@ public class GroceryListApp {
                 System.out.println();
                 //should brig up BabyList items
                 System.out.println("Enter a choice: ");
-                list[] searchResult = new Item;
+                Item[] searchResult = new Item[0];
                 if (userInput2 == 1) {
-                    for (list item : list) {
+                    System.out.println(searchResult); //how do I return the actual search, not just the memory
+                    for (Item item : list) {
                         if (item.getItemCategory().equalsIgnoreCase("Baby List")) {
-                            searchResult = Arrays.copyOf(searchResult, );
+                            searchResult = Arrays.copyOf(searchResult, searchResult.length + 1);
+                            searchResult[searchResult.length - 1] = item;
+                            System.out.println(item.getItemName() + " - " + item.getItemCategory());
+
                         }
+
                     }
                     System.out.println("Exiting list");
 
