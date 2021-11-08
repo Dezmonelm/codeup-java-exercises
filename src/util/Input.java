@@ -1,6 +1,6 @@
 package util;
 
-import jdk.incubator.vector.VectorOperators;
+//import jdk.incubator.vector.VectorOperators;
 
 import java.util.Scanner;
 import java.util.function.DoubleBinaryOperator;

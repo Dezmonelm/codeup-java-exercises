@@ -10,12 +10,13 @@ public class GroceryListApp {
 
     public static void main(String[] args) {
         Item[] list = GroceryArray.findAll();
-        for (Item item : list) {
-            System.out.println(item.getItemName());
-        }
+//        for (Item item : list) {
+//            System.out.println(item.getItemName());
+//        }
         Input input = new Input();
         System.out.println("Would you like to create a grocery list? (y/n)");
         String userInput = input.getString();
+        System.out.println("anything");
         int userInput2 = input.getInt();
 
         if (userInput.equalsIgnoreCase("y")) {
@@ -36,19 +37,89 @@ public class GroceryListApp {
                             searchResult = Arrays.copyOf(searchResult, searchResult.length + 1);
                             searchResult[searchResult.length - 1] = item;
                             System.out.println(item.getItemName() + " - " + item.getItemCategory());
-
+                            //do something else with the return 'item'
                         }
-
+                        System.out.println("Exiting list");
                     }
-                    System.out.println("Exiting list");
 
-                    boolean confirm;
-                    do {
-                        System.out.println("Would you like to make another list?");
-                        confirm = input.getString().equalsIgnoreCase("y");
 
-                    } while (confirm);
+//                    boolean confirm;
+//                    do {
+//                        System.out.println("Would you like to make another list?");
+//                        confirm = input.getString().equalsIgnoreCase("y");
+//
+//                    } while (confirm);
 
+                } else if (userInput2 == 2) {
+                    for (Item item : list) {
+                        if (item.getItemCategory().equalsIgnoreCase("Libations")) {
+                            searchResult = Arrays.copyOf(searchResult, searchResult.length + 1);
+                            searchResult[searchResult.length - 1] = item;
+                            System.out.println(item.getItemName() + " - " + item.getItemCategory());
+                            //do something else with the return 'item'
+                        }
+                        System.out.println("Exiting list");
+                    }
+                } else if (userInput2 == 3) {
+                    for (Item item : list) {
+                        if (item.getItemCategory().equalsIgnoreCase("Other Drinks")) {
+                            searchResult = Arrays.copyOf(searchResult, searchResult.length + 1);
+                            searchResult[searchResult.length - 1] = item;
+                            System.out.println(item.getItemName() + " - " + item.getItemCategory());
+                            //do something else with the return 'item'
+                        }
+                        System.out.println("Exiting list");
+                    }
+                } else if (userInput2 == 4) {
+                    for (Item item : list) {
+                        if (item.getItemCategory().equalsIgnoreCase("Bread & Bakery")) {
+                            searchResult = Arrays.copyOf(searchResult, searchResult.length + 1);
+                            searchResult[searchResult.length - 1] = item;
+                            System.out.println(item.getItemName() + " - " + item.getItemCategory());
+                            //do something else with the return 'item'
+                        }
+                        System.out.println("Exiting list");
+                    }
+                } else if (userInput2 == 5) {
+                    for (Item item : list) {
+                        if (item.getItemCategory().equalsIgnoreCase("Proteins")) {
+                            searchResult = Arrays.copyOf(searchResult, searchResult.length + 1);
+                            searchResult[searchResult.length - 1] = item;
+                            System.out.println(item.getItemName() + " - " + item.getItemCategory());
+                            //do something else with the return 'item'
+                        }
+                        System.out.println("Exiting list");
+                    }
+                } else if (userInput2 == 6) {
+                    for (Item item : list) {
+                        if (item.getItemCategory().equalsIgnoreCase("Produce")) {
+                            searchResult = Arrays.copyOf(searchResult, searchResult.length + 1);
+                            searchResult[searchResult.length - 1] = item;
+                            System.out.println(item.getItemName() + " - " + item.getItemCategory());
+                            //do something else with the return 'item'
+                        }
+                        System.out.println("Exiting list");
+                    }
+                } else if (userInput2 == 7) {
+                    for (Item item : list) {
+                        if (item.getItemCategory().equalsIgnoreCase("Canned Goods")) {
+                            searchResult = Arrays.copyOf(searchResult, searchResult.length + 1);
+                            searchResult[searchResult.length - 1] = item;
+                            System.out.println(item.getItemName() + " - " + item.getItemCategory());
+                            //do something else with the return 'item'
+                        }
+                        System.out.println("Exiting list");
+                    }
+                } else if (userInput2 == 8) {
+                    for (Item item : list) {
+                        if (item.getItemCategory().equalsIgnoreCase("Sweeties Indeedies")) {
+                            searchResult = Arrays.copyOf(searchResult, searchResult.length + 1);
+                            searchResult[searchResult.length - 1] = item;
+                            System.out.println(item.getItemName() + " - " + item.getItemCategory());
+                            //do something else with the return 'item'
+                        }
+                        System.out.println("Exiting list");
+                    }
                 }
 
 
@@ -57,7 +128,7 @@ public class GroceryListApp {
             }
 
         } else {
-            System.out.println("SOMETHING ELSE WILL BE HERE LATER");
+            System.out.println("Done with that list.");
         }
 //        boolean confirm;
 //        do {
