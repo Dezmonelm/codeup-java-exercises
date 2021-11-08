@@ -1,6 +1,9 @@
 package util;
 
+import jdk.incubator.vector.VectorOperators;
+
 import java.util.Scanner;
+import java.util.function.DoubleBinaryOperator;
 
 public class Input {
     private Scanner scanner;
@@ -61,8 +64,16 @@ public class Input {
             System.out.println("Please enter a number, not a word.");
             return getDouble();
         }
-
-
     }
+
+//    public double getBinary() {
+//        try {
+//            return Double.parseDouble(this.scanner.nextLine());
+//        } catch (Exception e) {
+//            System.out.println();
+//        }
+//
+//
+//    }
 
 }
