@@ -16,8 +16,8 @@ public class GroceryListApp {
         Input input = new Input();
         System.out.println("Would you like to create a grocery list? (y/n)");
         String userInput = input.getString();
-        System.out.println("anything");
-        int userInput2 = input.getInt();
+
+
 
         if (userInput.equalsIgnoreCase("y")) {
             System.out.println("Would you like to enter a new item? (y/n)");
@@ -29,6 +29,7 @@ public class GroceryListApp {
                 System.out.println();
                 //should brig up BabyList items
                 System.out.println("Enter a choice: ");
+                int userInput2 = input.getInt();
                 Item[] searchResult = new Item[0];
                 if (userInput2 == 1) {
                     System.out.println(searchResult); //how do I return the actual search, not just the memory

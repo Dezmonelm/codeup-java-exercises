@@ -26,19 +26,37 @@ public class Student {
     public double getGradeAverage() {
         // returns the average of the students grades
         double gradeTotal = 0;
-        for (double grade : grades) {
+        for (double grade : this.grades) {
             gradeTotal += grade;
 
         }
-        return (double) gradeTotal/grades.size();
+        return (double) gradeTotal/this.grades.size();
     }
 
     public static void main(String[] args) {
         Student dez = new Student("Dez");
+        Student doug = new Student("Doug E. Fresh");
+        Student zay = new Student("Zavion");
+
         dez.addGrade(80);
         dez.addGrade(75);
         dez.addGrade(100);
-        System.out.println("Dez GPA: " + dez.getGradeAverage());
 
+        doug.addGrade(90);
+        doug.addGrade(66);
+        doug.addGrade(88);
+
+        zay.addGrade(77);
+        zay.addGrade(75);
+        zay.addGrade(83);
+
+        System.out.println("Dez Grades: " + dez.grades);
+        System.out.println("Doug Grades: " + doug.grades);
+        System.out.println("Zavion Grades: " + zay.grades);
+        System.out.println();
+
+        System.out.println("Dez GPA: " + dez.getGradeAverage());
+        System.out.println("Doug GPA: " + doug.getGradeAverage());
+        System.out.println("Zavion GPA: " + zay.getGradeAverage());
     }
 }
